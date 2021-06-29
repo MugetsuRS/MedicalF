@@ -1,0 +1,21 @@
+.maindiv{
+  margin: 1% 1% 1% 1%;
+  position: relative;
+  display: flex;
+  background-color: aliceblue;
+}
+.margin{
+  margin-left: 10px;
+}
+.button{
+  height: 90px;
+  width: 400px;
+}
+.patientinfo{
+  position: relative;
+  margin-left: 8%;
+
+}
+.border{
+  border: 2px solid #eaa71e;
+}

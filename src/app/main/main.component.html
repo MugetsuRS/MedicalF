@@ -1,0 +1,40 @@
+<div class="maindiv">
+  <span class="border" *ngFor = "let patients of info">
+    <div class= "padding ">
+      <mat-form-field class="example-form-field" appearance="fill">
+        <mat-label>Clearable input</mat-label>
+        <input matInput type="text" [(ngModel)]="value">
+      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+      <mat-icon>close</mat-icon>
+      </button>
+      </mat-form-field>
+        <button class="margin" mat-raised-button color="warn">New patient</button>
+        </div>
+      <div>
+        <button class="button">
+          <span>
+            First Name: {{patients.name}}
+            Surrname: {{patients.surrname}}
+          </span>
+          <div>Dayofbirth</div>
+          <div >Sex</div>
+        </button>
+      </div>
+  </span>
+  <div fxLayout="row" fxLayoutGap="30px" class="patientinfo">
+    <h2>First name</h2>
+    <h2>Lastname</h2>
+    <h2>Birthday</h2>
+    <button  fxFlexAlign="start" mat-raised-button color="warn">Edit</button>
+    <button  fxFlexAlign="start" mat-raised-button color="accent">Delete</button>'
+    <app-patient>
+      <div>
+
+      </div>
+    </app-patient>
+  </div>
+
+</div>
+
+
+
